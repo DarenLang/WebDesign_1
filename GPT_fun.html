@@ -1,0 +1,38 @@
+hehehe
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Image Link</title>
+    <script>
+        // An array of random image URLs (replace these with your own image URLs)
+        var imageUrls = [
+            'https://example.com/image1.jpg',
+            'https://example.com/image2.jpg',
+            'https://example.com/image3.jpg',
+            // Add more image URLs here
+        ];
+
+        // Function to generate a random number between 0 and the length of the imageUrls array
+        function getRandomIndex() {
+            return Math.floor(Math.random() * imageUrls.length);
+        }
+
+        // Function to set the random image link
+        function setRandomImageLink() {
+            var randomIndex = getRandomIndex();
+            var randomImageUrl = imageUrls[randomIndex];
+            var imageLinkElement = document.getElementById('randomImageLink');
+            imageLinkElement.href = randomImageUrl;
+            imageLinkElement.textContent = 'Random Image ' + (randomIndex + 1);
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Image Link</h1>
+    <p>Click the button below to generate a random image link:</p>
+    <button onclick="setRandomImageLink()">Generate Random Link</button>
+    <p><a id="randomImageLink" href="#" target="_blank">Random Image</a></p>
+</body>
+</html>
