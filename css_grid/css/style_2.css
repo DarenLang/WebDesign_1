@@ -1,0 +1,92 @@
+
+body {
+    background-color: gray;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: darkgrey;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.grid-Container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto 25%;
+}
+
+.grid-item {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navmenu {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.Chunk1 {
+    grid-row: 3;
+    grid-column: 2;
+    background-color: #267726;
+}
+
+.Chunk2 {
+    grid-row: 3;
+    grid-column: 3;
+    background-color: #1d885d;
+}
+
+.Chunk3 {
+    grid-row: 4;
+    grid-column: 2;
+    background-color: #58a75c;
+}
+
+.Chunk4 {
+    grid-row: 4;
+    grid-column: 3;
+    background-color: green;
+}
+
+.Chunk5 {
+    grid-row: 5;
+    grid-column: 2;
+    background-color: darkgreen;
+}
+
+.Chunk6 {
+    grid-row: 5;
+    grid-column: 3;
+    background-color: #28492a;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
