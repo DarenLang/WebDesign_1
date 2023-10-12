@@ -46,6 +46,14 @@ li a:hover {
     color: white;
 }
 
+#shrink{
+    height: 50%;
+    width: 50%;
+}
+
+p {
+    font-size: 20px;
+}
 .Chunk1 {
     grid-row: 3;
     grid-column: 2;
