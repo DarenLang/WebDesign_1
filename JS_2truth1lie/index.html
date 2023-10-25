@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>2 Truths 1 Lie</Title>
+</head>
+
+<body>
+    <h1>Two Truths, ONE Lie!</h1>
+
+    <h2>Question 1</h2>
+    <form>
+        <input type="radio" id="c1" name="Question1" value="Choice1">
+        <label for="c1">Choice1</label><br>
+        <input type="radio" id="c2" name="Question1" value="Choice2">
+        <label for="c2">Choice2</label><br>
+        <input type="radio" id="c3" name="Question1" value="Choice3">
+        <label for="c3">Choice3</label>
+    </form>
+
+    <p id="Q1"></p>
+    <button 
+        onclick="document.getElementById('Q1').innerHTML='Answer1'; 
+        getElementById('Q1').style.display='block'">SUBMIT</button>
+    <button
+        onclick="getElementById('Q1').style.display='none'">hide</button>
+
+    <hr>
+
+    <h2>Question 2</h2>
+    <form>
+        <input type="radio" id="c4" name="Question2" value="Choice4">
+        <label for="c4">Choice4</label><br>
+        <input type="radio" id="c5" name="Question2" value="Choice5">
+        <label for="c5">Choice5</label><br>
+        <input type="radio" id="c6" name="Question2" value="Choice6">
+        <label for="c6">Choice6</label>
+    </form>
+
+    <p id="Q2"></p>
+    <button 
+        onclick="document.getElementById('Q2').innerHTML='Answer2'; 
+        getElementById('Q2').style.display='block'">SUBMIT</button>
+    <button
+        onclick="getElementById('Q2').style.display='none'">hide</button>
+
+    <hr>
+    
+</body>
+</html>
