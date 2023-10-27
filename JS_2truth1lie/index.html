@@ -7,44 +7,91 @@
 
 <body>
     <h1>Two Truths, ONE Lie!</h1>
+    <hr>
 
-    <h2>Question 1</h2>
     <form>
-        <input type="radio" id="c1" name="Question1" value="Choice1">
-        <label for="c1">Choice1</label><br>
-        <input type="radio" id="c2" name="Question1" value="Choice2">
-        <label for="c2">Choice2</label><br>
-        <input type="radio" id="c3" name="Question1" value="Choice3">
-        <label for="c3">Choice3</label>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name">
+        <input type="submit" value="submit" onclick="greetings()">
     </form>
 
+    <hr>
+    <h2>Question 1</h2>
+    <form>
+        <input type="radio" id="c1" name="Question1" value="truth">
+        <label for="c1">Choice1</label><br>
+        <input type="radio" id="c2" name="Question2" value="lie">
+        <label for="c2">Choice2</label><br>
+        <input type="radio" id="c3" name="Question2" value="lie">
+        <label for="c3">Choice3</label>
+        <br><br>
+        <input type="button" value="submit" onclick="checktruth1()"></button>
+    </form>
     <p id="Q1"></p>
-    <button 
-        onclick="document.getElementById('Q1').innerHTML='Answer1'; 
-        getElementById('Q1').style.display='block'">SUBMIT</button>
-    <button
-        onclick="getElementById('Q1').style.display='none'">hide</button>
 
     <hr>
 
     <h2>Question 2</h2>
     <form>
-        <input type="radio" id="c4" name="Question2" value="Choice4">
+        <input type="radio" id="c4" name="Question4" value="truth">
         <label for="c4">Choice4</label><br>
-        <input type="radio" id="c5" name="Question2" value="Choice5">
+        <input type="radio" id="c5" name="Question5" value="lie">
         <label for="c5">Choice5</label><br>
-        <input type="radio" id="c6" name="Question2" value="Choice6">
+        <input type="radio" id="c6" name="Question6" value="lie">
         <label for="c6">Choice6</label>
+        <br><br>
+        <input type="button" value="submit" onclick="checktruth2()"></button>
     </form>
-
     <p id="Q2"></p>
-    <button 
-        onclick="document.getElementById('Q2').innerHTML='Answer2'; 
-        getElementById('Q2').style.display='block'">SUBMIT</button>
-    <button
-        onclick="getElementById('Q2').style.display='none'">hide</button>
 
     <hr>
+
+    <script>
+        //How to replace pop-up alert with message appear?
+
+        function greetings() {
+            let name = document.getElementById('name').value;
+            alert("Hello, "+ name);
+        }
+        
+        function checktruth1() {
+            let answerTag=document.getElementById('Q1')
+            if( document.getElementById('c1').checked){
+                answerTag.innerHTML='Correct!';
+                answerTag.style.color='green';
+                answerTag.style.display='block';
+            }
+            if( document.getElementById('c2').checked){
+                answerTag.innerHTML='try again...';
+                answerTag.style.color='red';
+                answerTag.style.display='block';
+            }
+            if( document.getElementById('c3').checked){
+                answerTag.innerHTML='nope';
+                answerTag.style.color='red';
+                answerTag.style.display='block';
+            }
+        }   
+        
+        function checktruth2() {
+            let answerTag=document.getElementById('Q2')
+            if( document.getElementById('c4').checked){
+                answerTag.innerHTML='Correct!';
+                answerTag.style.color='green';
+                answerTag.style.display='block';
+            }
+            if( document.getElementById('c5').checked){
+                answerTag.innerHTML='try again...';
+                answerTag.style.color='red';
+                answerTag.style.display='block';
+            }
+            if( document.getElementById('c6').checked){
+                answerTag.innerHTML='nope';
+                answerTag.style.color='red';
+                answerTag.style.display='block';
+            }
+        }  
+    </script>
     
 </body>
 </html>
