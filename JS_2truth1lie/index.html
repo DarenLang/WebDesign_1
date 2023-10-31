@@ -6,8 +6,9 @@
 </head>
 
 <body>
-    <h1>Two Truths, ONE Lie!</h1>
-    <hr>
+    <center><h1>Two Truths, ONE Lie!</h1>
+    <h4>Which choice is the truth?</h4>
+    <hr></center>
 
     <form>
         <label for="name">Name:</label><br>
@@ -19,11 +20,11 @@
     <h2>Question 1</h2>
     <form>
         <input type="radio" id="c1" name="Question1" value="truth">
-        <label for="c1">Choice1</label><br>
-        <input type="radio" id="c2" name="Question2" value="lie">
-        <label for="c2">Choice2</label><br>
-        <input type="radio" id="c3" name="Question2" value="lie">
-        <label for="c3">Choice3</label>
+        <label for="c1">My birthday is in October</label><br>
+        <input type="radio" id="c2" name="Question1" value="lie">
+        <label for="c2">My birthday is in December</label><br>
+        <input type="radio" id="c3" name="Question1" value="lie">
+        <label for="c3">My birthday is in September</label>
         <br><br>
         <input type="button" value="submit" onclick="checktruth1()"></button>
     </form>
@@ -33,12 +34,12 @@
 
     <h2>Question 2</h2>
     <form>
-        <input type="radio" id="c4" name="Question4" value="truth">
-        <label for="c4">Choice4</label><br>
-        <input type="radio" id="c5" name="Question5" value="lie">
-        <label for="c5">Choice5</label><br>
-        <input type="radio" id="c6" name="Question6" value="lie">
-        <label for="c6">Choice6</label>
+        <input type="radio" id="c4" name="Question2" value="truth">
+        <label for="c4">I go to EPS!</label><br>
+        <input type="radio" id="c5" name="Question2" value="lie">
+        <label for="c5">I go to Uprep.</label><br>
+        <input type="radio" id="c6" name="Question2" value="lie">
+        <label for="c6">I go to SAAS.</label>
         <br><br>
         <input type="button" value="submit" onclick="checktruth2()"></button>
     </form>
@@ -46,12 +47,28 @@
 
     <hr>
 
+    <h2>Question 3</h2>
+    <form>
+        <input type="radio" id="c7" name="Question3" value="lie">
+        <label for="c7">My favorite numbers are 9 and 12.</label><br>
+        <input type="radio" id="c8" name="Question3" value="lie">
+        <label for="c8">My favorite number is 6 and 18.</label><br>
+        <input type="radio" id="c9" name="Question3" value="truth">
+        <label for="c9">My favorite number is 8 and 14.</label>
+        <br><br>
+        <input type="button" value="submit" onclick="checktruth3()"></button>
+    </form>
+    <p id="Q3"></p>
+
+    <hr>
+
+    <center><h3>Thanks for</h3></center>
     <script>
         //How to replace pop-up alert with message appear?
 
         function greetings() {
             let name = document.getElementById('name').value;
-            alert("Hello, "+ name);
+            alert("Hello, "+ name +"!");
         }
         
         function checktruth1() {
@@ -90,7 +107,26 @@
                 answerTag.style.color='red';
                 answerTag.style.display='block';
             }
-        }  
+        } 
+
+        function checktruth3() {
+            let answerTag=document.getElementById('Q3')
+            if( document.getElementById('c7').checked){
+                answerTag.innerHTML='Nope';
+                answerTag.style.color='red';
+                answerTag.style.display='block';
+            }
+            if( document.getElementById('c8').checked){
+                answerTag.innerHTML='try again...';
+                answerTag.style.color='red';
+                answerTag.style.display='block';
+            }
+            if( document.getElementById('c9').checked){
+                answerTag.innerHTML='Correct!';
+                answerTag.style.color='green';
+                answerTag.style.display='block';
+            }
+        }
     </script>
     
 </body>
