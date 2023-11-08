@@ -16,3 +16,104 @@ ul {
     text-decoration: none;
   }
 
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .name {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .Navigation {
+    display: inline-block;
+    vertical-align:middle;
+  }
+
+  .grid-Container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto 25%;
+}
+
+.grid-item {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+li a:hover {
+    color: pink;
+}
+
+.intro {
+    font-size: 20px;
+}
+
+.Block1 {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: lightgray;
+}
+
+.Block2 {
+    grid-row: 3;
+    grid-column: 2;
+    background-color: lightgray;
+}
+
+.Block3 {
+    grid-row: 3;
+    grid-column: 3;
+    background-color: lightgray;
+}
+
+.Block4 {
+    grid-row: 3;
+    grid-column: 4;
+    background-color: lightgray;
+}
+
+.Block5 {
+    grid-row: 4;
+    grid-column: 1;
+    background-color: lightgray;
+}
+
+.Block6 {
+    grid-row: 4;
+    grid-column: 2;
+    background-color: lightgray;
+}
+
+.Block7 {
+    grid-row: 4;
+    grid-column: 3;
+    background-color: lightgray;
+}
+
+.Block8 {
+    grid-row: 4;
+    grid-column: 4;
+    background-color: lightgray;
+}
+
+.Block9 {
+    grid-row: 5;
+    grid-column: 1;
+    background-color: lightgray;
+}
+
+.Block10 {
+    grid-row: 5;
+    grid-column: 2;
+    background-color: lightgray;
+}
+
+.Block11 {
+    grid-row: 5;
+    grid-column: 3;
+    background-color: lightgray;
+}
