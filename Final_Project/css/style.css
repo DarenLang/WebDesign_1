@@ -72,15 +72,19 @@ li a:hover {
 }
 
 .video {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .links {
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .notice {
     font-size: 14px;
+    color: #545454;
 }
 
 .Block1 {
