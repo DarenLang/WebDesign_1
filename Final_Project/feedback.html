@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>feedback form</Title>
+        <link rel="stylesheet" href="https://use.typekit.net/ekt5zkn.css">
+    </head>
+
+
+    <center><body>
+        <h6 style="font-size: medium; font-family: Amandine;">Feedback Form</h6>
+    
+        <hr>
+        <p style="font-family: Roca;">What is your occupation?</p>
+        <form>
+            <input type="radio" id="c1" name="Question1">
+            <label for="c1">Doctor/Clinican</label><br>
+            <input type="radio" id="c2" name="Question1">
+            <label for="c2">Patient</label><br>
+            <input type="radio" id="c3" name="Question1">
+            <label for="c3">Other</label>
+        </form>
+        <p id="Q1"></p>
+    <br>
+        <p style="font-family: Roca;">Was the provided information helpful?</p>
+        <form>
+            <input type="radio" id="c4" name="Question2">
+            <label for="c4">Yes</label><br>
+            <input type="radio" id="c5" name="Question2">
+            <label for="c5">No</label><br>
+            <input type="radio" id="c6" name="Question2">
+            <label for="c6">Somewhat</label>
+        </form>
+        <p id="Q2"></p>
+    <br>
+        <p style="font-family: Roca;">Do you have the Simple App installed?</p>
+        <form>
+            <input type="radio" id="c7" name="Question3">
+            <label for="c7">Yes</label><br>
+            <input type="radio" id="c8" name="Question3">
+            <label for="c8">No</label><br>
+        </form>
+        <p id="Q3"></p>
+    <br>
+        <form>
+            <label for="additional" style="font-family: Roca;">Additional thoughts & suggestions?</label><br>
+            <input type="text" id="additional">
+            <input type="submit" value="submit" onclick="complete()">
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <script>
+            function complete() {
+                let additional = document.getElementById('additional').value;
+                alert("Thanks for your feedback! You may now close this page.");
+            }
+
+        </script>
+        <style>
+            body {
+                background-color: #cdcdcd;
+            }
+        </style>
+        
+    </body></center>
+</html>
