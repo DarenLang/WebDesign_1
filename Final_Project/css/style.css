@@ -32,6 +32,10 @@ ul {
   .Navigation {
     display: inline-block;
     vertical-align:middle;
+    font-family: Amandine;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
   }
   
   .grid-Container {
@@ -103,6 +107,10 @@ li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Amandine;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
 }
 
 .notice {
@@ -315,4 +323,39 @@ h5 {
 h5 {
     font-size: 20px;
     font-family: Roca;
+}
+
+.Tool1 {
+    font-size: 25px;
+    font-family: The Seasons;
+    line-height: 1.5;
+    background-color: #8bbbfa;
+}
+
+.Tool2 {
+    background-color: #8bbbfa;
+}
+.Tool3 {
+    background-color: #cdcdcd;
+    border-radius: 100px;
+}
+
+.Tool4 {
+    background-color: #cdcdcd;
+    border-radius: 100px;
+}
+
+.Tool5 {
+    background-color: #cdcdcd;
+    border-radius: 100px;
+}
+
+.Tool6 {
+    background-color: #cdcdcd;
+    border-radius: 100px;
+}
+
+.Tool7 {
+    background-color: #cdcdcd;
+    border-radius: 100px;
 }
